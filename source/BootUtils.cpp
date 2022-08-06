@@ -159,3 +159,10 @@ void bootHomebrewChannel() {
     DEBUG_FUNCTION_LINE("Launching vWii title %016llx", titleId);
     launchvWiiTitle((uint32_t) (titleId >> 32), (uint32_t) (titleId & 0xffffffff));
 }
+
+void bootCustom() {
+    handleAccountSelection();
+
+    // Boot: 0x0005000010102172L (RetroArch Forwarder)
+    _SYSLaunchTitleWithStdArgsInNoSplash(0x0005000010102172L, nullptr);
+}

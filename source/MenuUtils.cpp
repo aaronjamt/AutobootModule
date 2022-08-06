@@ -22,6 +22,7 @@ const char *menu_options[] = {
         "Homebrew Launcher",
         "vWii System Menu",
         "vWii Homebrew Channel",
+        "Custom Application/Channel",
 };
 
 const char *autoboot_config_strings[] = {
@@ -29,6 +30,7 @@ const char *autoboot_config_strings[] = {
         "homebrew_launcher",
         "vwii_system_menu",
         "vwii_homebrew_channel",
+        "custom",
 };
 
 template<typename... Args>

@@ -66,6 +66,9 @@ int32_t main(int32_t argc, char **argv) {
             case BOOT_OPTION_VWII_HOMEBREW_CHANNEL:
                 bootHomebrewChannel();
                 break;
+            case BOOT_OPTION_CUSTOM:
+                bootCustom();
+                break;
             default:
                 bootWiiUMenu();
                 break;
