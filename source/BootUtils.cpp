@@ -164,5 +164,5 @@ void bootCustom() {
     handleAccountSelection();
 
     // Boot: 0x0005000010102172L (RetroArch Forwarder)
-    _SYSLaunchTitleWithStdArgsInNoSplash(0x0005000010102172L, nullptr);
+    SYSLaunchTitle(0x0005000010102172L, nullptr);
 }
